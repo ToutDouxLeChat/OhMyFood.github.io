@@ -1,0 +1,20 @@
+.logocenter{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.backlogo{
+    height: 40px;
+}
+
+.textheader{
+    display: flex;
+    justify-content: center;
+}
+.backheader{
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+
+}
