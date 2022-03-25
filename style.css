@@ -1,7 +1,9 @@
-.logocenter{
+.logoOMF{
     display: flex;
     justify-content: center;
     height: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Shrikhand', cursive;
 }
 
 .backlogo{
@@ -9,12 +11,11 @@
 }
 
 .textheader{
-    display: flex;
-    justify-content: center;
+    padding: 20px;
 }
 .backheader{
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
-
+    border-top: 3px solid #d3d3d3;
 }
