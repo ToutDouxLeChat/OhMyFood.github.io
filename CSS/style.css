@@ -1,0 +1,36 @@
+.violet {
+  color: #9356DC;
+}
+
+.rose {
+  color: #FF79DA;
+}
+
+.vert {
+  color: #99E2D0;
+}
+
+h1 {
+  height: 30px;
+  margin-top: 10px;
+  font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.backlogo {
+  margin: -8px;
+  background-color: darkgrey;
+}
+.backlogo .logoOMF {
+  display: flex;
+  justify-content: center;
+}
+
+.lieuindic {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,48 +1,3 @@
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button, input, select {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  padding: 0;
-}
-
 .violet {
   color: #9356DC;
 }
@@ -55,16 +10,91 @@ td, th {
   color: #99E2D0;
 }
 
-.Logo {
+h1 {
+  height: 30px;
+  margin-top: 10px;
   font-family: "Shrikhand", cursive;
 }
 
-.txt {
+h2 {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: white;
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+/*HEADER*/
+.backlogo {
+  margin: -8px;
+}
+.backlogo .logoOMF {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.lieuindic {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+  padding-bottom: 5px;
+  background: #eaeaea;
+}
+.lieuindic .logofont {
+  padding-right: 15px;
+}
+
+.navheader {
+  text-align: center;
+  background: #f6f6f6;
+  margin: -8px;
+  padding: 10px;
+  height: 240px;
+}
+.navheader .space {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.navheader .rechercheresto {
+  background: #FF79DA;
+  border-radius: 50px 50px;
+  height: 45px;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+}
+.navheader .rechercheresto .txtrecherche {
+  padding: 12px;
+  color: white;
+}
+
+.espacement {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.num {
+  background: #9356DC;
+  margin-right: 340px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.restoaccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;
 }
 
 /*# sourceMappingURL=style.css.map */

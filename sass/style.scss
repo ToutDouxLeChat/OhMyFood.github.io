@@ -1,7 +1,75 @@
-@import "libs/reset.scss";
 @import "libs/color.scss";
 @import "libs/police.scss";
 
-body{
-    background-color: white;
+/*HEADER*/
+
+.backlogo{
+    margin: -8px;
+        .logoOMF{
+            display : flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
 }
+
+.lieuindic{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: -8px;
+    padding-bottom: 5px;
+    background: #eaeaea;
+    .logofont{
+        padding-right: 15px;
+    }
+}
+
+.navheader{
+    text-align: center;
+    background: #f6f6f6;
+    margin: -8px;
+    padding: 10px;
+    height: 240px;
+    .space{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .rechercheresto{
+        background: #FF79DA;
+        border-radius: 50px 50px ;
+        height: 45px;
+        margin-left: 70px ;
+        margin-right: 70px;
+        text-align: center;
+        .txtrecherche{
+            padding: 12px;
+            color: white;
+        }
+    }
+}
+
+.espacement{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.num{
+    background: #9356DC;
+    margin-right: 340px;
+    text-align: center;
+    border-radius: 50%;
+    color: white ;
+}
+
+.restoaccess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+}
+
+
+
+
+
