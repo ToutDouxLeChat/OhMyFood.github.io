@@ -1,11 +1,11 @@
-.violet{
-    color:#9356DC ;
-}
+$violet_color:#9356DC ;
 
-.rose{
-    color:#FF79DA ;
-}
+$rose_color:#FF79DA ;
 
-.vert{
-    color:#99E2D0 ;
-}
+$vert_color:#99E2D0 ;
+
+$primaire:$violet_color;
+
+$secondaire:$rose_color;
+
+$tertiaire:$vert_color;

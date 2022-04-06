@@ -1,31 +1,10 @@
-.violet {
-  color: #9356DC;
-}
-
-.rose {
-  color: #FF79DA;
-}
-
-.vert {
-  color: #99E2D0;
-}
-
 h1 {
   height: 30px;
   margin-top: 10px;
   font-family: "Shrikhand", cursive;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-}
-
-p {
+body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
@@ -80,6 +59,10 @@ p {
 .espacement {
   margin-top: 40px;
   margin-left: 10px;
+}
+
+.cartefonction {
+  display: flex;
 }
 
 .num {
