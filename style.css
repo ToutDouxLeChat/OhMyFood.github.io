@@ -47,16 +47,23 @@ body {
   margin-right: 35px;
 }
 .navheader .rechercheresto {
-  background: #FF79DA;
+  background-color: #FF79DA;
   border-radius: 50px 50px;
-  height: 45px;
+  height: 50px;
   margin-left: 70px;
   margin-right: 70px;
   text-align: center;
+  box-shadow: 0 0 5px 0;
+}
+.navheader .rechercheresto:hover {
+  box-shadow: 0 0 10px 0;
 }
 .navheader .rechercheresto .txtrecherche {
-  padding: 12px;
+  padding: 15px;
   color: white;
+}
+.navheader .rechercheresto .restolink {
+  text-decoration: none;
 }
 
 .espacementf {
@@ -78,7 +85,8 @@ body {
   margin-left: 15px;
   margin-right: 10px;
   border-radius: 15px 15px;
-  height: 60px;
+  height: 72px;
+  box-shadow: 5px 5px 10px 0 #eaeaea;
 }
 
 .num {
@@ -107,6 +115,12 @@ body {
 }
 
 /*SECTION*/
+.link {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
 .restoview {
   background-color: #f6f6f6;
   margin: -8px;
@@ -128,16 +142,42 @@ body {
   border-radius: 15px 15px 0 0;
   height: 175px;
   object-fit: cover;
+  width: 100%;
 }
 .restoview .carteresto .titreresto {
   padding-left: 15px;
+  margin-top: -5px;
 }
 .restoview .carteresto .titrelieu {
   padding-left: 15px;
-  margin-top: -30px;
+  margin-top: -20px;
+}
+
+.heartlogo {
+  position: absolute;
+  transform: translate(290px, 200px);
+  font-size: 23px;
+}
+.heartlogo:hover {
+  color: #FF79DA;
+}
+
+.new {
+  position: absolute;
+  transform: translate(250px, -235px);
+  background-color: #99E2D0;
+  color: #00966e;
+  padding: 7px;
+  box-shadow: #99E2D0 1px 1px 1px 0;
+  border-radius: 3px 3px;
 }
 
 /*FOOTER*/
+.linkfooter {
+  color: white;
+  text-decoration: none;
+}
+
 .footerOMF {
   background-color: #353535;
   color: white;

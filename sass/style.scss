@@ -36,16 +36,23 @@
         margin-right: 35px;
     }
     .rechercheresto{
-        background: $secondaire;
+        background-color: $secondaire;
         border-radius: 50px 50px ;
-        height: 45px;
+        height: 50px;
         margin-left: 70px ;
         margin-right: 70px;
         text-align: center;
+        box-shadow: 0 0 5px 0;
+        &:hover{
+            box-shadow: 0 0 10px 0;
+        }
         .txtrecherche{
-            padding: 12px;
+            padding: 15px;
             color: white;
         }
+    .restolink{
+        text-decoration: none;
+    }
     }
 }
 
@@ -68,7 +75,8 @@
     margin-left: 15px;
     margin-right: 10px;
     border-radius: 15px 15px;
-    height: 60px;   
+    height: 72px;  
+    box-shadow: 5px 5px 10px 0 $grey_color; 
 }
 
 .num{
@@ -98,6 +106,12 @@
 
 /*SECTION*/
 
+.link{
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
 .restoview{
     background-color: #f6f6f6;
     margin: -8px;
@@ -117,18 +131,44 @@
         border-radius: 15px 15px 0 0;
         height: 175px;
         object-fit: cover;
+        width: 100%;
     }
     .titreresto{
         padding-left: 15px ;    
+        margin-top: -5px;
     }
     .titrelieu{
         padding-left: 15px;
-        margin-top: -30px;
+        margin-top: -20px;
     }
     }
 }
 
+.heartlogo{
+    position: absolute;
+    transform: translate(290px,200px);
+    font-size: 23px;
+    &:hover{
+        color: $secondaire;
+    }
+}
+
+.new{
+    position: absolute;
+    transform: translate(250px, -235px);
+    background-color: $tertiaire;
+    color: #00966e;
+    padding: 7px;
+    box-shadow: $tertiaire 1px 1px 1px 0;
+    border-radius: 3px 3px;
+}
+
 /*FOOTER*/
+
+.linkfooter{
+    color: white;
+    text-decoration: none;
+}
 
 .footerOMF{
     background-color: #353535;
