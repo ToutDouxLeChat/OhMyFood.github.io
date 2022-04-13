@@ -151,6 +151,17 @@
     &:hover{
         color: $secondaire;
     }
+    .heartfaregu{
+        position: absolute;
+    }
+    .heartfas{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 200ms;
+        &:hover{
+            opacity: 1;
+        }
+    }
 }
 
 .new{
@@ -167,7 +178,6 @@
 
 .linkfooter{
     color: white;
-    text-decoration: none;
 }
 
 .footerOMF{

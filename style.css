@@ -12,6 +12,10 @@ body {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*HEADER*/
 .backlogo {
   margin: -8px;
@@ -161,6 +165,17 @@ body {
 .heartlogo:hover {
   color: #FF79DA;
 }
+.heartlogo .heartfaregu {
+  position: absolute;
+}
+.heartlogo .heartfas {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.heartlogo .heartfas:hover {
+  opacity: 1;
+}
 
 .new {
   position: absolute;
@@ -175,7 +190,6 @@ body {
 /*FOOTER*/
 .linkfooter {
   color: white;
-  text-decoration: none;
 }
 
 .footerOMF {
