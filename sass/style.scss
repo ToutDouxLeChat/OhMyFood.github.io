@@ -1,15 +1,19 @@
 @import "libs/color.scss";
 @import "libs/police.scss";
 
+body{
+    margin: 0px;
+}
 /*HEADER*/
 
+.backhome{
+    position: absolute;
+    left: 20px;
+    padding-top: 20px;
+}
 .backlogo{
-    margin: -8px;
-        .logoOMF{
-            display : flex;
-            justify-content: center;
-            margin-bottom: 5px;
-        }
+    display : flex;
+    justify-content: center;
 }
 
 .lieuindic{
@@ -17,7 +21,6 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: -8px;
     padding-bottom: 5px;
     background: $color_design;
     .logofont{
@@ -28,7 +31,6 @@
 .navheader{
     text-align: center;
     background: #f6f6f6;
-    margin: -8px;
     padding: 10px;
     height: 240px;
     .space{
@@ -58,11 +60,11 @@
 
 .espacementf{
     margin-top: 40px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 .espacementr{
     margin-top: 35px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 
@@ -72,8 +74,8 @@
     justify-content: center;
     background: $color_design;
     margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 20px;
     border-radius: 15px 15px;
     height: 72px;  
     box-shadow: 5px 5px 10px 0 $grey_color; 
@@ -106,6 +108,28 @@
 
 /*SECTION*/
 
+.cartefull{
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    .placementtextall{
+        padding-left: 15px;
+    }
+    .placementtitle{
+        margin-top: 25px;
+    }
+    .EPD{
+        position: absolute;
+    }
+}
+
+
+.imagespages{
+    width: 105%;
+    margin-left: -8px;
+}
 .link{
     font-style: normal;
     text-decoration: none;
@@ -114,7 +138,6 @@
 
 .restoview{
     background-color: #f6f6f6;
-    margin: -8px;
     padding-top: 10px;
     margin-top: 65px;
     height: 1225px;
@@ -164,6 +187,11 @@
     }
 }
 
+.heartlogo1{
+    transform: translate(320px,-45px);
+    @extend .heartlogo
+}
+
 .new{
     position: absolute;
     transform: translate(250px, -235px);
@@ -183,7 +211,6 @@
 .footerOMF{
     background-color: #353535;
     color: white;
-    margin: -8px;
     padding-bottom: 30px;
     .placementfooter{
         margin-left: 25px;

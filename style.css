@@ -14,16 +14,23 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
 }
 
 /*HEADER*/
-.backlogo {
-  margin: -8px;
+.backhome {
+  position: absolute;
+  left: 20px;
+  padding-top: 20px;
 }
-.backlogo .logoOMF {
+
+.backlogo {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
 }
 
 .lieuindic {
@@ -31,7 +38,6 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: -8px;
   padding-bottom: 5px;
   background: #eaeaea;
 }
@@ -42,7 +48,6 @@ a {
 .navheader {
   text-align: center;
   background: #f6f6f6;
-  margin: -8px;
   padding: 10px;
   height: 240px;
 }
@@ -72,12 +77,12 @@ a {
 
 .espacementf {
   margin-top: 40px;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 .espacementr {
   margin-top: 35px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .restoaccess {
@@ -86,8 +91,8 @@ a {
   justify-content: center;
   background: #eaeaea;
   margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 10px;
+  margin-left: 25px;
+  margin-right: 20px;
   border-radius: 15px 15px;
   height: 72px;
   box-shadow: 5px 5px 10px 0 #eaeaea;
@@ -119,6 +124,28 @@ a {
 }
 
 /*SECTION*/
+.cartefull {
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 270px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+.cartefull .placementtextall {
+  padding-left: 15px;
+}
+.cartefull .placementtitle {
+  margin-top: 25px;
+}
+.cartefull .EPD {
+  position: absolute;
+}
+
+.imagespages {
+  width: 105%;
+  margin-left: -8px;
+}
+
 .link {
   font-style: normal;
   text-decoration: none;
@@ -127,7 +154,6 @@ a {
 
 .restoview {
   background-color: #f6f6f6;
-  margin: -8px;
   padding-top: 10px;
   margin-top: 65px;
   height: 1225px;
@@ -157,24 +183,28 @@ a {
   margin-top: -20px;
 }
 
-.heartlogo {
+.heartlogo, .heartlogo1 {
   position: absolute;
   transform: translate(290px, 200px);
   font-size: 23px;
 }
-.heartlogo:hover {
+.heartlogo:hover, .heartlogo1:hover {
   color: #FF79DA;
 }
-.heartlogo .heartfaregu {
+.heartlogo .heartfaregu, .heartlogo1 .heartfaregu {
   position: absolute;
 }
-.heartlogo .heartfas {
+.heartlogo .heartfas, .heartlogo1 .heartfas {
   position: absolute;
   opacity: 0;
   transition: opacity 200ms;
 }
-.heartlogo .heartfas:hover {
+.heartlogo .heartfas:hover, .heartlogo1 .heartfas:hover {
   opacity: 1;
+}
+
+.heartlogo1 {
+  transform: translate(320px, -45px);
 }
 
 .new {
@@ -195,7 +225,6 @@ a {
 .footerOMF {
   background-color: #353535;
   color: white;
-  margin: -8px;
   padding-bottom: 30px;
 }
 .footerOMF .placementfooter {
