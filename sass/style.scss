@@ -108,6 +108,25 @@ body{
 
 /*SECTION*/
 
+hr{
+    color: $secondaire;
+    width:45px; 
+    position: absolute;
+}
+
+.entreesline{
+    left: 15px;
+    top: 95px;
+}
+.platsline{
+    left: 15px;
+    top: 425px;
+}
+.dessertsline{
+    left: 15px;
+    top: 775px;
+}
+
 .cartefull{
     background-color: #f6f6f6;
     position: absolute;
@@ -121,13 +140,49 @@ body{
         margin-top: 25px;
     }
     .EPD{
-        position: absolute;
+        padding-left: 15px;
     }
 }
 
+.menu{
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px 20px ;
+    .cartemenu{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .prix{
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .titremenu{
+        margin-top: -15px;
+    }
+}
+
+.commande{
+    background-color: $secondaire;
+    border-radius: 50px 50px ;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 0 5px 0;
+    margin: 50px;
+    margin-left: 95px;
+    margin-right: 95px;
+    &:hover{
+        box-shadow: 0 0 10px 0;
+    }
+    .txtcommande{
+        padding: 15px;
+        color: white;
+    }
+}
 
 .imagespages{
-    width: 105%;
+    width: 102%;
     margin-left: -8px;
 }
 .link{
@@ -212,21 +267,30 @@ body{
     background-color: #353535;
     color: white;
     padding-bottom: 30px;
-    .placementfooter{
-        margin-left: 25px;
-        padding-top: 20px ;
-    }
-    .placementlogo{
-        display: flex;
-        align-items: center;
-        margin-bottom: -20px;
-    }
-    .iconfooter{
-        width: 30px;
-    }
-    .placementtextf{
-        margin-top: -20px;
-    }
+}
+
+.footerOMFmenu{
+    background-color: #353535;
+    color: white;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 222%;
+    width: 100%;
+}
+.placementfooter{
+    margin-left: 25px;
+    padding-top: 20px ;
+}
+.placementlogo{
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+.iconfooter{
+    width: 30px;
+}
+.placementtextf{
+    margin-top: -20px;
 }
 
 
