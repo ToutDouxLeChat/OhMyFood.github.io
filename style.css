@@ -63,6 +63,11 @@ body {
   margin-right: 70px;
   text-align: center;
   box-shadow: 0 0 5px 0;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.navheader .rechercheresto:hover {
+  transform: scale(1.1);
 }
 .navheader .rechercheresto:hover {
   box-shadow: 0 0 10px 0;
@@ -190,6 +195,11 @@ hr {
   margin: 50px;
   margin-left: 95px;
   margin-right: 95px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.commande:hover {
+  transform: scale(1.1);
 }
 .commande:hover {
   box-shadow: 0 0 10px 0;
@@ -254,7 +264,7 @@ hr {
 .heartlogo .heartfas, .heartlogo1 .heartfas {
   position: absolute;
   opacity: 0;
-  transition: opacity 200ms;
+  transition: opacity 300ms;
 }
 .heartlogo .heartfas:hover, .heartlogo1 .heartfas:hover {
   opacity: 1;
