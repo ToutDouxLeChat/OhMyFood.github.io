@@ -17,310 +17,378 @@ a {
   color: black;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0px;
-  }
+body {
+  margin: 0px;
+}
 
-  /*HEADER*/
-  .backhome {
-    position: absolute;
-    left: 20px;
-    padding-top: 20px;
-  }
+/*HEADER*/
+.backhome {
+  position: absolute;
+  left: 20px;
+  padding-top: 20px;
+}
 
-  .backlogo {
-    display: flex;
-    justify-content: center;
-  }
+.backlogo {
+  display: flex;
+  justify-content: center;
+}
 
-  .lieuindic {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5px;
-    background: #eaeaea;
-  }
-  .lieuindic .logofont {
-    padding-right: 15px;
-  }
+.lieuindic {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  background: #eaeaea;
+}
+.lieuindic .logofont {
+  padding-right: 15px;
+}
 
+.navheader {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 10px;
+  height: 240px;
+}
+.navheader .space {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.navheader .rechercheresto {
+  background: #FF79DA;
+  border-radius: 50px 50px;
+  height: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+  box-shadow: 0 0 5px 0;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.navheader .rechercheresto:hover {
+  transform: scale(1.1);
+}
+.navheader .rechercheresto:hover {
+  box-shadow: 0 0 10px 0;
+}
+.navheader .rechercheresto .txtrecherche {
+  padding: 15px;
+  color: white;
+}
+.navheader .rechercheresto .restolink {
+  text-decoration: none;
+}
+
+.espacementf {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.espacementr {
+  margin-top: 35px;
+  margin-left: 30px;
+}
+
+.restoaccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 20px;
+  border-radius: 15px 15px;
+  height: 72px;
+  box-shadow: 5px 5px 10px 0 #eaeaea;
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9356DC;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  left: 5px;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.iconfonction {
+  color: grey;
+  margin: 20px;
+}
+
+/*SECTION*/
+.cartefull {
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 270px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+.cartefull .placementtextall {
+  padding-left: 15px;
+}
+.cartefull .placementtitle {
+  margin-top: 25px;
+}
+.cartefull .EPD {
+  margin-left: 15px;
+}
+.cartefull .EPD .line {
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  padding-bottom: 5px;
+}
+
+.menu {
+  background-color: white;
+  margin: 15px;
+  border-radius: 20px 20px;
+}
+.menu .cartemenu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 10px;
+}
+.menu .prix {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.menu .titremenu {
+  margin-top: -15px;
+  width: 93%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.commande {
+  background-color: #FF79DA;
+  border-radius: 50px 50px;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 0 5px 0;
+  margin: 50px;
+  margin-left: 95px;
+  margin-right: 95px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.commande:hover {
+  transform: scale(1.1);
+}
+.commande:hover {
+  box-shadow: 0 0 10px 0;
+}
+.commande .txtcommande {
+  padding: 15px;
+  color: white;
+}
+
+.imagespages {
+  width: 102%;
+  margin-left: -15px;
+  image-rendering: pixelated;
+}
+
+.link {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.restoview {
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  margin-top: 65px;
+  height: 1225px;
+}
+.restoview .carteresto {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 20px;
+  border-radius: 25px;
+  height: 250px;
+}
+.restoview .carteresto .imagesresto {
+  border-radius: 15px 15px 0 0;
+  height: 175px;
+  object-fit: cover;
+  width: 100%;
+  image-rendering: pixelated;
+}
+.restoview .carteresto .titreresto {
+  padding-left: 15px;
+  margin-top: -5px;
+}
+.restoview .carteresto .titrelieu {
+  padding-left: 15px;
+  margin-top: -20px;
+}
+
+.new {
+  position: absolute;
+  margin-top: -235px;
+  margin-left: 65%;
+  background-color: #99E2D0;
+  color: #00966e;
+  padding: 7px;
+  box-shadow: #99E2D0 1px 1px 1px 0;
+  border-radius: 3px 3px;
+}
+
+.heartlogo, .heartlogo1 {
+  position: absolute;
+  transform: translate(290px, 200px);
+  font-size: 23px;
+}
+.heartlogo:hover, .heartlogo1:hover {
+  color: #FF79DA;
+}
+.heartlogo .heartfaregu, .heartlogo1 .heartfaregu {
+  position: absolute;
+}
+.heartlogo .heartfas, .heartlogo1 .heartfas {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.heartlogo .heartfas:hover, .heartlogo1 .heartfas:hover {
+  opacity: 1;
+}
+
+.heartlogo1 {
+  transform: translate(320px, -45px);
+}
+
+/*FOOTER*/
+.linkfooter {
+  color: white;
+}
+
+.footerOMF {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.footerOMFmenu {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 222%;
+  width: 100%;
+}
+
+.footerOMFmenu1 {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 178%;
+  width: 100%;
+}
+
+.placementfooter {
+  margin-left: 25px;
+  padding-top: 20px;
+}
+
+.placementlogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+.iconfooter {
+  width: 30px;
+}
+
+.placementtextf {
+  margin-top: -20px;
+}
+
+.loadingscreen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 70px;
+  background: #eaeaea;
+  padding-left: 43%;
+  padding-top: 79%;
+  color: #9356DC;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.loadingscreen:hover {
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
   .navheader {
-    text-align: center;
-    background: #f6f6f6;
-    padding: 10px;
-    height: 240px;
-  }
-  .navheader .space {
-    margin-left: 35px;
-    margin-right: 35px;
+    height: 200px;
   }
   .navheader .rechercheresto {
-    background: #FF79DA;
-    border-radius: 50px 50px;
-    height: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
-    text-align: center;
-    box-shadow: 0 0 5px 0;
-    transform: scale(1);
-    transition: transform 400ms;
-  }
-  .navheader .rechercheresto:hover {
-    transform: scale(1.1);
-  }
-  .navheader .rechercheresto:hover {
-    box-shadow: 0 0 10px 0;
-  }
-  .navheader .rechercheresto .txtrecherche {
-    padding: 15px;
-    color: white;
-  }
-  .navheader .rechercheresto .restolink {
-    text-decoration: none;
-  }
-
-  .espacementf {
-    margin-top: 40px;
-    margin-left: 25px;
-  }
-
-  .espacementr {
-    margin-top: 35px;
-    margin-left: 30px;
-  }
-
-  .restoaccess {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eaeaea;
-    margin-bottom: 15px;
-    margin-left: 25px;
-    margin-right: 20px;
-    border-radius: 15px 15px;
-    height: 72px;
-    box-shadow: 5px 5px 10px 0 #eaeaea;
-  }
-
-  .num {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #9356DC;
-    border-radius: 50%;
-    color: white;
-    position: absolute;
-    left: 5px;
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-  }
-
-  .position {
-    display: flex;
-    align-items: center;
-    margin-right: 70px;
-  }
-
-  .iconfonction {
-    color: grey;
-    margin: 20px;
-  }
-
-  /*SECTION*/
-  hr {
-    color: #FF79DA;
-    width: 45px;
-    position: absolute;
-  }
-
-  .entreesline {
-    left: 15px;
-    top: 95px;
-  }
-
-  .platsline {
-    left: 15px;
-    top: 425px;
-  }
-
-  .dessertsline {
-    left: 15px;
-    top: 775px;
-  }
-
-  .cartefull {
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 270px;
-    width: 100%;
-    border-radius: 30px 30px 0 0;
-  }
-  .cartefull .placementtextall {
-    padding-left: 15px;
-  }
-  .cartefull .placementtitle {
-    margin-top: 25px;
-  }
-  .cartefull .EPD {
-    padding-left: 15px;
-  }
-
-  .menu {
-    background-color: white;
-    margin: 15px;
-    border-radius: 20px 20px;
-  }
-  .menu .cartemenu {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 10px;
-  }
-  .menu .prix {
-    margin-right: 10px;
-    margin-bottom: 15px;
-  }
-  .menu .titremenu {
-    margin-top: -15px;
-  }
-
-  .commande {
-    background-color: #FF79DA;
-    border-radius: 50px 50px;
-    height: 50px;
-    text-align: center;
-    box-shadow: 0 0 5px 0;
-    margin: 50px;
-    margin-left: 95px;
-    margin-right: 95px;
-    transform: scale(1);
-    transition: transform 400ms;
-  }
-  .commande:hover {
-    transform: scale(1.1);
-  }
-  .commande:hover {
-    box-shadow: 0 0 10px 0;
-  }
-  .commande .txtcommande {
-    padding: 15px;
-    color: white;
-  }
-
-  .imagespages {
-    width: 102%;
-    margin-left: -8px;
-  }
-
-  .link {
-    font-style: normal;
-    text-decoration: none;
-    color: black;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .restoview {
-    background-color: #f6f6f6;
-    padding-top: 10px;
-    margin-top: 65px;
-    height: 1225px;
+    height: 700px;
+    margin-top: 25px;
   }
   .restoview .carteresto {
+    width: 45%;
+  }
+  .restoview .emplacementcarte {
     display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 20px;
-    border-radius: 25px;
-    height: 250px;
-  }
-  .restoview .carteresto .imagesresto {
-    border-radius: 15px 15px 0 0;
-    height: 175px;
-    object-fit: cover;
-    width: 100%;
-  }
-  .restoview .carteresto .titreresto {
-    padding-left: 15px;
-    margin-top: -5px;
-  }
-  .restoview .carteresto .titrelieu {
-    padding-left: 15px;
-    margin-top: -20px;
   }
 
-  .heartlogo, .heartlogo1 {
-    position: absolute;
-    transform: translate(290px, 200px);
-    font-size: 23px;
-  }
-  .heartlogo:hover, .heartlogo1:hover {
-    color: #FF79DA;
-  }
-  .heartlogo .heartfaregu, .heartlogo1 .heartfaregu {
-    position: absolute;
-  }
-  .heartlogo .heartfas, .heartlogo1 .heartfas {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 300ms;
-  }
-  .heartlogo .heartfas:hover, .heartlogo1 .heartfas:hover {
-    opacity: 1;
+  .emplacementaccess {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .heartlogo1 {
-    transform: translate(320px, -45px);
+  .num {
+    left: auto;
+    margin-right: 300px;
   }
 
   .new {
-    position: absolute;
-    transform: translate(250px, -235px);
-    background-color: #99E2D0;
-    color: #00966e;
-    padding: 7px;
-    box-shadow: #99E2D0 1px 1px 1px 0;
-    border-radius: 3px 3px;
+    margin-left: 33%;
   }
 
-  /*FOOTER*/
-  .linkfooter {
-    color: white;
-  }
-
-  .footerOMF {
-    background-color: #353535;
-    color: white;
-    padding-bottom: 30px;
+  .heartlogo1 {
+    transform: translate(700px, -45px);
   }
 
   .footerOMFmenu {
-    background-color: #353535;
-    color: white;
-    padding-bottom: 30px;
-    position: absolute;
-    top: 222%;
-    width: 100%;
+    top: 146%;
   }
 
-  .placementfooter {
-    margin-left: 25px;
-    padding-top: 20px;
+  .footerOMFmenu1 {
+    top: 155%;
   }
 
-  .placementlogo {
-    display: flex;
-    align-items: center;
-    margin-bottom: -20px;
-  }
-
-  .iconfooter {
-    width: 30px;
-  }
-
-  .placementtextf {
-    margin-top: -20px;
+  .commande {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
 
