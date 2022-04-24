@@ -152,7 +152,7 @@ body{
     }
     .titremenu{
         margin-top: -15px;
-        width: 93%;
+        width: 100%;
         white-space: nowrap;
         overflow: hidden ;
         text-overflow: ellipsis;
@@ -359,6 +359,7 @@ body{
     .new{
         margin-left: 33%;
     }
+    
     .heartlogo1{
         transform: translate(700px,-45px);
     }
@@ -379,4 +380,50 @@ body{
 
 @media screen and (min-width: 992px)
 {
+    .restoview{
+        height: 390px;
+        margin-top: 25px;
+        .carteresto{
+        width: 330px;
+        }
+        .emplacementcarte1{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .new{
+        margin-left: 605px;
+    }
+
+    .emplacementaccess1{
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .espacementf{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .espacementr{
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+    }
+
+    .navheader{
+        height: 180px;
+        .rechercheresto{
+            margin-left: 630px;
+            margin-right: 630px;
+        
+        }
+    }
+
+    .heartlogo1{
+        transform: translate(1425px, -45px);
+    }
 }

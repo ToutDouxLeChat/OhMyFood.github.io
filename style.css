@@ -168,7 +168,7 @@ body {
 }
 .menu .titremenu {
   margin-top: -15px;
-  width: 93%;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -389,6 +389,52 @@ body {
   .commande {
     margin-left: 30%;
     margin-right: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restoview {
+    height: 390px;
+    margin-top: 25px;
+  }
+  .restoview .carteresto {
+    width: 330px;
+  }
+  .restoview .emplacementcarte1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new {
+    margin-left: 605px;
+  }
+
+  .emplacementaccess1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .espacementf {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .espacementr {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .navheader {
+    height: 180px;
+  }
+  .navheader .rechercheresto {
+    margin-left: 630px;
+    margin-right: 630px;
+  }
+
+  .heartlogo1 {
+    transform: translate(1425px, -45px);
   }
 }
 
