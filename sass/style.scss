@@ -140,6 +140,11 @@ body{
     background-color: white;
     margin: 15px;
     border-radius: 20px 20px ;
+    transform:translateY(0);
+    transition: transform 300ms;
+    &:hover{
+        transform: translateY(10px);
+    }
     .cartemenu{
         display: flex;
         align-items: flex-end;
@@ -278,7 +283,7 @@ body{
     color: white;
     padding-bottom: 30px;
     position: absolute;
-    top: 222%;
+    top: 156%;
     width: 100%;
 }
 
@@ -287,7 +292,7 @@ body{
     color: white;
     padding-bottom: 30px;
     position: absolute;
-    top: 178%;
+    top: 166%;
     width: 100%;
 }
 
@@ -365,11 +370,11 @@ body{
     }
 
     .footerOMFmenu{
-        top: 146%;
+        top: 157%;
     }
 
     .footerOMFmenu1{
-        top: 155%;
+        top: 167%;
     }
 
     .commande{
@@ -417,9 +422,8 @@ body{
     .navheader{
         height: 180px;
         .rechercheresto{
-            margin-left: 630px;
-            margin-right: 630px;
-        
+            margin-left: 35%;
+            margin-right: 35%;
         }
     }
 
