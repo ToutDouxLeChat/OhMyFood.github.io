@@ -17,6 +17,63 @@ a {
   color: black;
 }
 
+.loadingscreen {
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #9356DC;
+  border-right-color: #FF79DA;
+  animation: spinner 3s linear;
+  opacity: 0;
+}
+
+.loadingpages {
+  animation: page 3s linear;
+}
+
+.list {
+  animation: list 2s forwards;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(1turn);
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes page {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes list {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
 body {
   margin: 0px;
 }
@@ -153,13 +210,8 @@ body {
 
 .menu {
   background-color: white;
-  margin: 15px;
+  margin: 0 15px;
   border-radius: 20px 20px;
-  transform: translateY(0);
-  transition: transform 300ms;
-}
-.menu:hover {
-  transform: translateY(10px);
 }
 .menu .cartemenu {
   display: flex;
@@ -203,9 +255,10 @@ body {
 }
 
 .imagespages {
-  width: 102%;
-  margin-left: -15px;
+  width: 100%;
+  height: 245px;
   image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .link {
@@ -246,8 +299,8 @@ body {
 
 .new {
   position: absolute;
-  margin-top: -235px;
-  margin-left: 65%;
+  bottom: 20px;
+  right: 35px;
   background-color: #99E2D0;
   color: #00966e;
   padding: 7px;
@@ -255,28 +308,56 @@ body {
   border-radius: 3px 3px;
 }
 
-.heartlogo, .heartlogo1 {
+.new1 {
   position: absolute;
-  transform: translate(290px, 200px);
+  bottom: -235px;
+  right: 35px;
+  background-color: #99E2D0;
+  color: #00966e;
+  padding: 7px;
+  box-shadow: #99E2D0 1px 1px 1px 0;
+  border-radius: 3px 3px;
+}
+
+.heartlogo, .heartlogo0, .heartlogo3, .heartlogo2, .heartlogo1 {
+  position: absolute;
+  right: 70px;
+  bottom: -115px;
   font-size: 23px;
 }
-.heartlogo:hover, .heartlogo1:hover {
+.heartlogo:hover, .heartlogo0:hover, .heartlogo3:hover, .heartlogo2:hover, .heartlogo1:hover {
   color: #FF79DA;
 }
-.heartlogo .heartfaregu, .heartlogo1 .heartfaregu {
+.heartlogo .heartfaregu, .heartlogo0 .heartfaregu, .heartlogo3 .heartfaregu, .heartlogo2 .heartfaregu, .heartlogo1 .heartfaregu {
   position: absolute;
 }
-.heartlogo .heartfas, .heartlogo1 .heartfas {
+.heartlogo .heartfas, .heartlogo0 .heartfas, .heartlogo3 .heartfas, .heartlogo2 .heartfas, .heartlogo1 .heartfas {
   position: absolute;
   opacity: 0;
   transition: opacity 300ms;
 }
-.heartlogo .heartfas:hover, .heartlogo1 .heartfas:hover {
+.heartlogo .heartfas:hover, .heartlogo0 .heartfas:hover, .heartlogo3 .heartfas:hover, .heartlogo2 .heartfas:hover, .heartlogo1 .heartfas:hover {
   opacity: 1;
 }
 
 .heartlogo1 {
-  transform: translate(320px, -45px);
+  right: 70px;
+  bottom: -385px;
+}
+
+.heartlogo2 {
+  right: 70px;
+  bottom: -655px;
+}
+
+.heartlogo3 {
+  right: 70px;
+  bottom: -925px;
+}
+
+.heartlogo0 {
+  right: 55px;
+  top: 30px;
 }
 
 /*FOOTER*/
@@ -327,25 +408,11 @@ body {
   margin-top: -20px;
 }
 
-.loadingscreen {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 70px;
-  background: #eaeaea;
-  padding-left: 43%;
-  padding-top: 79%;
-  color: #9356DC;
-  opacity: 1;
-  transition: opacity 300ms;
-}
-.loadingscreen:hover {
-  opacity: 0;
-}
-
 @media screen and (min-width: 768px) {
+  .list {
+    padding: 0 80px;
+  }
+
   .navheader {
     height: 200px;
   }
@@ -376,11 +443,38 @@ body {
   }
 
   .new {
-    margin-left: 33%;
+    bottom: 160px;
+    right: 55%;
+  }
+
+  .new1 {
+    bottom: 175px;
+    right: 5%;
+  }
+
+  .heartlogo, .heartlogo1, .heartlogo2, .heartlogo3, .heartlogo0 {
+    right: 58%;
+    bottom: 25px;
   }
 
   .heartlogo1 {
-    transform: translate(700px, -45px);
+    right: 8%;
+    bottom: 25px;
+  }
+
+  .heartlogo2 {
+    right: 58%;
+    bottom: -265px;
+  }
+
+  .heartlogo3 {
+    right: 8%;
+    bottom: -265px;
+  }
+
+  .heartlogo0 {
+    right: 55px;
+    top: 30px;
   }
 
   .footerOMFmenu {
@@ -401,16 +495,19 @@ body {
     height: 390px;
     margin-top: 25px;
   }
-  .restoview .carteresto {
-    width: 330px;
-  }
   .restoview .emplacementcarte1 {
     display: flex;
     justify-content: center;
   }
 
   .new {
-    margin-left: 605px;
+    bottom: 295px;
+    right: 77.5%;
+  }
+
+  .new1 {
+    bottom: 310px;
+    right: 52.5%;
   }
 
   .emplacementaccess1 {
@@ -438,8 +535,43 @@ body {
     margin-right: 35%;
   }
 
+  .restoview .emplacementcarte {
+    display: flex;
+    justify-content: center;
+    width: 420%;
+  }
+
+  .heartlogo, .heartlogo1, .heartlogo2, .heartlogo3, .heartlogo0 {
+    right: 80%;
+    bottom: 165px;
+  }
+
   .heartlogo1 {
-    transform: translate(1425px, -45px);
+    right: 55%;
+    bottom: 165px;
+  }
+
+  .heartlogo2 {
+    right: 31%;
+    bottom: 165px;
+  }
+
+  .heartlogo3 {
+    right: 5%;
+    bottom: 165px;
+  }
+
+  .heartlogo0 {
+    right: 55px;
+    top: 30px;
+  }
+
+  .footerOMFmenu1 {
+    top: 161%;
+  }
+
+  .footerOMFmenu {
+    top: 151%;
   }
 }
 
