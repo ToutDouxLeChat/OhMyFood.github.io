@@ -146,6 +146,8 @@ body{
         align-items: flex-end;
         justify-content: space-between;
         margin: 10px;
+        &:hover{
+        }
     }
     .prix{
         margin-right: 10px;
@@ -157,6 +159,7 @@ body{
         white-space: nowrap;
         overflow: hidden ;
         text-overflow: ellipsis;
+        margin-right: -20px;
     }
 }
 
@@ -310,7 +313,7 @@ body{
     color: white;
     padding-bottom: 30px;
     position: absolute;
-    top: 156%;
+    top: 152%;
     width: 100%;
 }
 
@@ -319,7 +322,7 @@ body{
     color: white;
     padding-bottom: 30px;
     position: absolute;
-    top: 166%;
+    top: 162%;
     width: 100%;
 }
 
@@ -409,14 +412,6 @@ body{
     .heartlogo0{
         right: 55px;
         top: 30px;
-    }
-
-    .footerOMFmenu{
-        top: 157%;
-    }
-
-    .footerOMFmenu1{
-        top: 167%;
     }
 
     .commande{

@@ -11,16 +11,35 @@
     border: 9px solid;
     border-color: $primaire;
     border-right-color: $secondaire;
-    animation: spinner 3s linear;
+    animation: spinner 2s linear;
     opacity: 0;
 }
 
 .loadingpages {
-    animation: page 3s linear;
+    animation: page 2s linear;
 }
 
 .list{
     animation: list 2s forwards;
+}
+
+.check{
+    color: white;
+    background: $tertiaire;
+    width: 15%;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
+    margin-right: -10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    .logocheck{
+    font-size: 30px;
+    transform: rotateX(1);
+        &:hover {
+            transform: rotateX(10);
+        }
+    }
 }
 
 @keyframes spinner{

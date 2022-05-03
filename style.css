@@ -30,16 +30,35 @@ a {
   border: 9px solid;
   border-color: #9356DC;
   border-right-color: #FF79DA;
-  animation: spinner 3s linear;
+  animation: spinner 2s linear;
   opacity: 0;
 }
 
 .loadingpages {
-  animation: page 3s linear;
+  animation: page 2s linear;
 }
 
 .list {
   animation: list 2s forwards;
+}
+
+.check {
+  color: white;
+  background: #99E2D0;
+  width: 15%;
+  height: 80px;
+  border-radius: 0 20px 20px 0;
+  margin-right: -10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.check .logocheck {
+  font-size: 30px;
+  transform: rotateX(1);
+}
+.check .logocheck:hover {
+  transform: rotateX(10);
 }
 
 @keyframes spinner {
@@ -229,6 +248,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-right: -20px;
 }
 
 .commande {
@@ -376,7 +396,7 @@ body {
   color: white;
   padding-bottom: 30px;
   position: absolute;
-  top: 156%;
+  top: 152%;
   width: 100%;
 }
 
@@ -385,7 +405,7 @@ body {
   color: white;
   padding-bottom: 30px;
   position: absolute;
-  top: 166%;
+  top: 162%;
   width: 100%;
 }
 
@@ -475,14 +495,6 @@ body {
   .heartlogo0 {
     right: 55px;
     top: 30px;
-  }
-
-  .footerOMFmenu {
-    top: 157%;
-  }
-
-  .footerOMFmenu1 {
-    top: 167%;
   }
 
   .commande {
