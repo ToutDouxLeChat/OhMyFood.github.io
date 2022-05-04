@@ -93,8 +93,19 @@ a {
     opacity: 100%;
   }
 }
+html {
+  height: 100%;
+}
+
 body {
   margin: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 /*HEADER*/
@@ -207,16 +218,17 @@ body {
 /*SECTION*/
 .cartefull {
   background-color: #f6f6f6;
-  position: absolute;
-  top: 270px;
-  width: 100%;
+  height: 110%;
   border-radius: 30px 30px 0 0;
+  margin-top: -60px;
+  z-index: 100;
 }
 .cartefull .placementtextall {
   padding-left: 15px;
+  padding-top: 15px;
 }
 .cartefull .placementtitle {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .cartefull .EPD {
   margin-left: 15px;
@@ -249,6 +261,9 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: -20px;
+}
+.menu .placementtextprix {
+  flex-grow: 1;
 }
 
 .commande {
@@ -295,6 +310,7 @@ body {
 }
 .restoview .carteresto {
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: white;
   margin: 20px;
@@ -319,8 +335,8 @@ body {
 
 .new {
   position: absolute;
-  bottom: 20px;
-  right: 35px;
+  bottom: 185px;
+  right: 15px;
   background-color: #99E2D0;
   color: #00966e;
   padding: 7px;
@@ -330,8 +346,8 @@ body {
 
 .new1 {
   position: absolute;
-  bottom: -235px;
-  right: 35px;
+  bottom: 200px;
+  right: 15px;
   background-color: #99E2D0;
   color: #00966e;
   padding: 7px;
@@ -341,8 +357,8 @@ body {
 
 .heartlogo, .heartlogo0, .heartlogo3, .heartlogo2, .heartlogo1 {
   position: absolute;
-  right: 70px;
-  bottom: -115px;
+  right: 50px;
+  bottom: 50px;
   font-size: 23px;
 }
 .heartlogo:hover, .heartlogo0:hover, .heartlogo3:hover, .heartlogo2:hover, .heartlogo1:hover {
@@ -361,23 +377,23 @@ body {
 }
 
 .heartlogo1 {
-  right: 70px;
-  bottom: -385px;
+  right: 50px;
+  bottom: 50px;
 }
 
 .heartlogo2 {
-  right: 70px;
-  bottom: -655px;
+  right: 50px;
+  bottom: 50px;
 }
 
 .heartlogo3 {
-  right: 70px;
-  bottom: -925px;
+  right: 50px;
+  bottom: 50px;
 }
 
 .heartlogo0 {
-  right: 55px;
-  top: 30px;
+  right: 50px;
+  top: 300px;
 }
 
 /*FOOTER*/
@@ -389,24 +405,6 @@ body {
   background-color: #353535;
   color: white;
   padding-bottom: 30px;
-}
-
-.footerOMFmenu {
-  background-color: #353535;
-  color: white;
-  padding-bottom: 30px;
-  position: absolute;
-  top: 152%;
-  width: 100%;
-}
-
-.footerOMFmenu1 {
-  background-color: #353535;
-  color: white;
-  padding-bottom: 30px;
-  position: absolute;
-  top: 162%;
-  width: 100%;
 }
 
 .placementfooter {
@@ -462,41 +460,6 @@ body {
     margin-right: 300px;
   }
 
-  .new {
-    bottom: 160px;
-    right: 55%;
-  }
-
-  .new1 {
-    bottom: 175px;
-    right: 5%;
-  }
-
-  .heartlogo, .heartlogo1, .heartlogo2, .heartlogo3, .heartlogo0 {
-    right: 58%;
-    bottom: 25px;
-  }
-
-  .heartlogo1 {
-    right: 8%;
-    bottom: 25px;
-  }
-
-  .heartlogo2 {
-    right: 58%;
-    bottom: -265px;
-  }
-
-  .heartlogo3 {
-    right: 8%;
-    bottom: -265px;
-  }
-
-  .heartlogo0 {
-    right: 55px;
-    top: 30px;
-  }
-
   .commande {
     margin-left: 30%;
     margin-right: 30%;
@@ -512,14 +475,8 @@ body {
     justify-content: center;
   }
 
-  .new {
-    bottom: 295px;
-    right: 77.5%;
-  }
-
-  .new1 {
-    bottom: 310px;
-    right: 52.5%;
+  .imagespages {
+    height: 300px;
   }
 
   .emplacementaccess1 {
@@ -553,37 +510,8 @@ body {
     width: 420%;
   }
 
-  .heartlogo, .heartlogo1, .heartlogo2, .heartlogo3, .heartlogo0 {
-    right: 80%;
-    bottom: 165px;
-  }
-
-  .heartlogo1 {
-    right: 55%;
-    bottom: 165px;
-  }
-
-  .heartlogo2 {
-    right: 31%;
-    bottom: 165px;
-  }
-
-  .heartlogo3 {
-    right: 5%;
-    bottom: 165px;
-  }
-
-  .heartlogo0 {
-    right: 55px;
-    top: 30px;
-  }
-
-  .footerOMFmenu1 {
-    top: 161%;
-  }
-
-  .footerOMFmenu {
-    top: 151%;
+  .EPDemplacement {
+    display: flex;
   }
 }
 
