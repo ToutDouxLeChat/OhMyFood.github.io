@@ -26,13 +26,14 @@
 .check{
     color: white;
     background: $tertiaire;
-    width: 0%;
+    width: 0;
     height: 80px;
     border-radius: 0 20px 20px 0;
     margin-right: -140px;
     align-items: center;
     display: flex;
     justify-content: center;
+    transition-duration: 1s;
 }
 
 @keyframes spinner{

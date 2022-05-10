@@ -50,16 +50,17 @@ footer a {
   animation: list 2s forwards;
 }
 
-.check, .menu:hover {
+.check {
   color: white;
   background: #99E2D0;
-  width: 0%;
+  width: 0;
   height: 80px;
   border-radius: 0 20px 20px 0;
   margin-right: -140px;
   align-items: center;
   display: flex;
   justify-content: center;
+  transition-duration: 1s;
 }
 
 @keyframes spinner {
@@ -245,9 +246,6 @@ footer {
   margin: 0 15px;
   border-radius: 20px 20px;
 }
-.menu:hover {
-  width: 15%;
-}
 .menu .cartemenu {
   display: flex;
   align-items: flex-end;
@@ -255,18 +253,18 @@ footer {
   margin: 10px;
   overflow: hidden;
 }
+.menu .cartemenu:hover .check {
+  width: 80px;
+}
 .menu .prix {
   margin-right: 150px;
   margin-bottom: 15px;
 }
 .menu .titremenu {
-  align-items: center;
-  margin-top: -15px;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  justify-content: space-between;
+  flex-grow: 1;
+  width: 150px;
+  line-height: 1;
+  padding-left: 5px;
 }
 .menu .placementtextprix {
   flex-grow: 1;
