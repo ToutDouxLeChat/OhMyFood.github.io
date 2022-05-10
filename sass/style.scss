@@ -152,29 +152,34 @@ footer{
     background-color: white;
     margin: 0 15px;
     border-radius: 20px 20px ;
+    &:hover{
+        width: 15%;
+        @extend .check
+    }
     .cartemenu{
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         margin: 10px;
-        &:hover{
-        }
+        overflow: hidden;
     }
     .prix{
-        margin-right: 10px;
+        margin-right: 150px;
         margin-bottom: 15px;
     }
     .titremenu{
+        align-items: center;
         margin-top: -15px;
         width: 100%;
         white-space: nowrap;
         overflow: hidden ;
         text-overflow: ellipsis;
-        margin-right: -20px;
+        justify-content: space-between;
     }
     .placementtextprix{
         flex-grow: 1;
     }
+
 }
 
 .commande{

@@ -17,6 +17,14 @@ a {
   color: black;
 }
 
+h4 {
+  font-weight: 500;
+}
+
+footer a {
+  color: white;
+}
+
 .loadingscreen {
   width: 56px;
   height: 56px;
@@ -42,23 +50,16 @@ a {
   animation: list 2s forwards;
 }
 
-.check {
+.check, .menu:hover {
   color: white;
   background: #99E2D0;
-  width: 15%;
+  width: 0%;
   height: 80px;
   border-radius: 0 20px 20px 0;
-  margin-right: -10px;
+  margin-right: -140px;
   align-items: center;
   display: flex;
   justify-content: center;
-}
-.check .logocheck {
-  font-size: 30px;
-  transform: rotateX(1);
-}
-.check .logocheck:hover {
-  transform: rotateX(10);
 }
 
 @keyframes spinner {
@@ -244,23 +245,28 @@ footer {
   margin: 0 15px;
   border-radius: 20px 20px;
 }
+.menu:hover {
+  width: 15%;
+}
 .menu .cartemenu {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin: 10px;
+  overflow: hidden;
 }
 .menu .prix {
-  margin-right: 10px;
+  margin-right: 150px;
   margin-bottom: 15px;
 }
 .menu .titremenu {
+  align-items: center;
   margin-top: -15px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-right: -20px;
+  justify-content: space-between;
 }
 .menu .placementtextprix {
   flex-grow: 1;

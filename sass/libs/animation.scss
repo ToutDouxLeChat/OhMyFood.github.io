@@ -26,20 +26,13 @@
 .check{
     color: white;
     background: $tertiaire;
-    width: 15%;
+    width: 0%;
     height: 80px;
     border-radius: 0 20px 20px 0;
-    margin-right: -10px;
+    margin-right: -140px;
     align-items: center;
     display: flex;
     justify-content: center;
-    .logocheck{
-    font-size: 30px;
-    transform: rotateX(1);
-        &:hover {
-            transform: rotateX(10);
-        }
-    }
 }
 
 @keyframes spinner{
