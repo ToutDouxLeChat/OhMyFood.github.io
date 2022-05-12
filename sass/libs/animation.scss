@@ -21,15 +21,15 @@
 
 .list{
     animation: list 2s forwards;
+    margin-top: 40px;
 }
 
 .check{
     color: white;
     background: $tertiaire;
     width: 0;
-    height: 80px;
+    height: 95px;
     border-radius: 0 20px 20px 0;
-    margin-right: -140px;
     align-items: center;
     display: flex;
     justify-content: center;

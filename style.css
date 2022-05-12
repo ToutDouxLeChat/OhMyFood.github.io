@@ -25,6 +25,13 @@ footer a {
   color: white;
 }
 
+.textmenu {
+  width: 235px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .loadingscreen {
   width: 56px;
   height: 56px;
@@ -48,15 +55,15 @@ footer a {
 
 .list {
   animation: list 2s forwards;
+  margin-top: 40px;
 }
 
 .check {
   color: white;
   background: #99E2D0;
   width: 0;
-  height: 80px;
+  height: 95px;
   border-radius: 0 20px 20px 0;
-  margin-right: -140px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -250,14 +257,14 @@ footer {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin: 10px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 .menu .cartemenu:hover .check {
   width: 80px;
 }
 .menu .prix {
-  margin-right: 150px;
+  margin-right: 10px;
   margin-bottom: 15px;
 }
 .menu .titremenu {

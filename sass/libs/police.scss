@@ -24,3 +24,10 @@ h4{
 footer a{
     color: white;
 }
+
+.textmenu{
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
