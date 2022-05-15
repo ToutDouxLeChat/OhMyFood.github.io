@@ -21,6 +21,22 @@
 
 .list{
     animation: list 2s forwards;
+    animation-delay: 0.2s;
+    margin-top: 40px;
+    opacity: 0;
+}
+
+.list1{
+    animation: list 5s forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+    margin-top: 40px;
+}
+
+.list2{
+    animation: list 7s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
     margin-top: 40px;
 }
 
@@ -34,6 +50,15 @@
     display: flex;
     justify-content: center;
     transition-duration: 1s;
+}
+
+.cartemenu:hover .fa-circle-check{
+    transform: rotate(360deg);
+    transition: 0.4s ease-in-out;
+}
+
+.fa-circle-check{
+    font-size: xx-large;
 }
 
 @keyframes spinner{

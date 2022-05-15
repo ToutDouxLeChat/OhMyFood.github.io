@@ -26,10 +26,14 @@ footer a {
 }
 
 .textmenu {
-  width: 235px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
+header p {
+  font-weight: bold;
 }
 
 .loadingscreen {
@@ -55,6 +59,22 @@ footer a {
 
 .list {
   animation: list 2s forwards;
+  animation-delay: 0.2s;
+  margin-top: 40px;
+  opacity: 0;
+}
+
+.list1 {
+  animation: list 5s forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  margin-top: 40px;
+}
+
+.list2 {
+  animation: list 7s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
   margin-top: 40px;
 }
 
@@ -68,6 +88,15 @@ footer a {
   display: flex;
   justify-content: center;
   transition-duration: 1s;
+}
+
+.cartemenu:hover .fa-circle-check {
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+
+.fa-circle-check {
+  font-size: xx-large;
 }
 
 @keyframes spinner {
@@ -147,12 +176,15 @@ footer {
   padding: 10px;
   height: 240px;
 }
+.navheader p {
+  font-weight: 500;
+}
 .navheader .space {
   margin-left: 35px;
   margin-right: 35px;
 }
 .navheader .rechercheresto {
-  background: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px 50px;
   height: 50px;
   margin-left: 70px;
@@ -186,7 +218,7 @@ footer {
   margin-left: 30px;
 }
 
-.restoaccess {
+.restoaccess, .restoaccess1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,6 +229,10 @@ footer {
   border-radius: 15px 15px;
   height: 72px;
   box-shadow: 5px 5px 10px 0 #eaeaea;
+}
+
+.restoaccess1 {
+  background: #f5edff;
 }
 
 .num {
@@ -219,9 +255,13 @@ footer {
   margin-right: 70px;
 }
 
-.iconfonction {
+.iconfonction, .iconfonction1 {
   color: grey;
   margin: 20px;
+}
+
+.iconfonction1 {
+  color: #9356DC;
 }
 
 /*SECTION*/
@@ -252,6 +292,7 @@ footer {
   background-color: white;
   margin: 0 15px;
   border-radius: 20px 20px;
+  box-shadow: #eaeaea 0 3px 6px 0;
 }
 .menu .cartemenu {
   display: flex;
@@ -264,8 +305,10 @@ footer {
   width: 80px;
 }
 .menu .prix {
-  margin-right: 10px;
+  margin-right: 25px;
   margin-bottom: 15px;
+  margin-left: 10px;
+  font-weight: bold;
 }
 .menu .titremenu {
   flex-grow: 1;
@@ -326,6 +369,7 @@ footer {
   background-color: white;
   margin: 20px;
   border-radius: 25px;
+  box-shadow: grey 0 0 6px 0;
   height: 250px;
 }
 .restoview .carteresto .imagesresto {
@@ -344,26 +388,20 @@ footer {
   margin-top: -20px;
 }
 
-.new {
+.new, .new1 {
   position: absolute;
   bottom: 185px;
   right: 15px;
   background-color: #99E2D0;
   color: #00966e;
   padding: 7px;
-  box-shadow: #99E2D0 1px 1px 1px 0;
+  box-shadow: grey 0 4px 6px 0;
   border-radius: 3px 3px;
+  font-weight: bold;
 }
 
 .new1 {
-  position: absolute;
   bottom: 200px;
-  right: 15px;
-  background-color: #99E2D0;
-  color: #00966e;
-  padding: 7px;
-  box-shadow: #99E2D0 1px 1px 1px 0;
-  border-radius: 3px 3px;
 }
 
 .heartlogo, .heartlogo0, .heartlogo3, .heartlogo2, .heartlogo1 {
@@ -372,9 +410,6 @@ footer {
   bottom: 50px;
   font-size: 23px;
 }
-.heartlogo:hover, .heartlogo0:hover, .heartlogo3:hover, .heartlogo2:hover, .heartlogo1:hover {
-  color: #FF79DA;
-}
 .heartlogo .heartfaregu, .heartlogo0 .heartfaregu, .heartlogo3 .heartfaregu, .heartlogo2 .heartfaregu, .heartlogo1 .heartfaregu {
   position: absolute;
 }
@@ -382,6 +417,9 @@ footer {
   position: absolute;
   opacity: 0;
   transition: opacity 300ms;
+  color: transparent;
+  background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
+  -webkit-background-clip: text;
 }
 .heartlogo .heartfas:hover, .heartlogo0 .heartfas:hover, .heartlogo3 .heartfas:hover, .heartlogo2 .heartfas:hover, .heartlogo1 .heartfas:hover {
   opacity: 1;
@@ -439,6 +477,14 @@ footer {
 
 @media screen and (min-width: 768px) {
   .list {
+    padding: 0 80px;
+  }
+
+  .list1 {
+    padding: 0 80px;
+  }
+
+  .list2 {
     padding: 0 80px;
   }
 
@@ -521,8 +567,29 @@ footer {
     width: 420%;
   }
 
+  .heartlogo0 {
+    top: 350px;
+  }
+
   .EPDemplacement {
     display: flex;
+  }
+
+  .list {
+    width: 45%;
+  }
+
+  .list1 {
+    width: 45%;
+  }
+
+  .list2 {
+    width: 45%;
+  }
+
+  .emplacementmenu {
+    display: flex;
+    justify-content: center;
   }
 }
 

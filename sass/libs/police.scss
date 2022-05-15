@@ -26,8 +26,12 @@ footer a{
 }
 
 .textmenu{
-    width: 235px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 10px;
+}
+
+header p{
+    font-weight: bold;
 }

@@ -45,12 +45,15 @@ footer{
     background: #f6f6f6;
     padding: 10px;
     height: 240px;
+    p{
+        font-weight: 500;
+    }
     .space{
         margin-left: 35px;
         margin-right: 35px;
     }
     .rechercheresto{
-        background: $secondaire;
+        background: linear-gradient( $secondaire , $primaire);
         border-radius: 50px 50px ;
         height: 50px;
         margin-left: 70px ;
@@ -98,6 +101,11 @@ footer{
     box-shadow: 5px 5px 10px 0 $grey_color; 
 }
 
+.restoaccess1{
+    @extend .restoaccess;
+    background: #f5edff;
+}
+
 .num{
     display: flex;
     align-items: center;
@@ -121,6 +129,11 @@ footer{
 .iconfonction{
     color: grey;
     margin: 20px;
+}
+
+.iconfonction1{
+    @extend .iconfonction;
+    color: $primaire;
 }
 
 /*SECTION*/
@@ -152,6 +165,7 @@ footer{
     background-color: white;
     margin: 0 15px;
     border-radius: 20px 20px ;
+    box-shadow: #eaeaea 0 3px 6px 0;
     .cartemenu{
         display: flex;
         align-items: flex-end;
@@ -163,8 +177,10 @@ footer{
         }
     }
     .prix{
-        margin-right: 10px;
+        margin-right: 25px;
         margin-bottom: 15px;
+        margin-left: 10px;
+        font-weight: bold;
     }
     .titremenu{
         flex-grow: 1;
@@ -227,6 +243,7 @@ footer{
     background-color: white;
     margin: 20px ;
     border-radius: 25px;
+    box-shadow: grey 0 0 6px 0;
     height: 250px;
     .imagesresto{
         border-radius: 15px 15px 0 0;
@@ -253,19 +270,14 @@ footer{
     background-color: $tertiaire;
     color: #00966e;
     padding: 7px;
-    box-shadow: $tertiaire 1px 1px 1px 0;
+    box-shadow: grey 0 4px 6px 0;
     border-radius: 3px 3px;
+    font-weight: bold;
 }
 
 .new1{
-    position: absolute;
+    @extend .new;
     bottom: 200px;
-    right: 15px;
-    background-color: $tertiaire;
-    color: #00966e;
-    padding: 7px;
-    box-shadow: $tertiaire 1px 1px 1px 0;
-    border-radius: 3px 3px;
 }
 
 .heartlogo{
@@ -273,9 +285,6 @@ footer{
     right: 50px;
     bottom: 50px;
     font-size: 23px;
-    &:hover{
-        color: $secondaire;
-    }
     .heartfaregu{
         position: absolute;
     }
@@ -283,6 +292,9 @@ footer{
         position: absolute;
         opacity: 0;
         transition: opacity 300ms;
+        color: transparent;
+        background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
+        -webkit-background-clip: text;
         &:hover{
             opacity: 1;
         }
@@ -346,6 +358,14 @@ footer{
 @media screen and (min-width: 768px)
 {
     .list{
+        padding: 0 80px;
+    }
+
+    .list1{
+        padding: 0 80px;
+    }
+
+    .list2{
         padding: 0 80px;
     }
 
@@ -434,7 +454,27 @@ footer{
         }
     }
 
+    .heartlogo0{
+        top: 350px;
+    }
+
     .EPDemplacement{
         display: flex;
+    }
+
+    .list{
+        width: 45%;
+    }
+
+    .list1{
+        width: 45%;
+    }
+
+    .list2{
+        width: 45%;
+    }
+    .emplacementmenu{
+        display: flex;
+        justify-content: center;
     }
 }
