@@ -321,7 +321,7 @@ footer {
 }
 
 .commande {
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px 50px;
   height: 50px;
   text-align: center;
@@ -505,6 +505,7 @@ footer {
   }
   .restoview .emplacementcarte {
     display: flex;
+    margin: 0 10px;
   }
 
   .emplacementaccess {
@@ -530,6 +531,7 @@ footer {
   .restoview .emplacementcarte1 {
     display: flex;
     justify-content: center;
+    margin: 0 20px;
   }
 
   .imagespages {
