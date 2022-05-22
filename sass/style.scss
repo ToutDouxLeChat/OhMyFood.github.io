@@ -93,6 +93,7 @@ footer{
 .restoaccess{
     display: flex;
     align-items: center;
+    justify-content: center;
     background: $color_design;
     margin-bottom: 15px;
     margin-left: 25px;
@@ -124,7 +125,6 @@ footer{
 .position{
     display: flex;
     align-items: center;
-    margin-left: 20px;
 }
 
 .iconfonction{
@@ -132,8 +132,16 @@ footer{
     margin: 20px;
 }
 
+.iconfonction2{
+    @extend .iconfonction;
+    margin: 15px;
+    margin-left: 5px
+}
+
 .iconfonction1{
     @extend .iconfonction;
+    margin: 15px;
+    margin-left: 15px;
     color: $primaire;
 }
 
@@ -379,6 +387,9 @@ footer{
         
         }
     }
+    .restoaccess{
+        width: 260px;
+    }
 
     .restoview{
         height: 700px;
@@ -399,7 +410,7 @@ footer{
 
     .num{
         left: auto;
-        margin-right: 300px;
+        margin-right: 265px;
     }
 
     .commande{
