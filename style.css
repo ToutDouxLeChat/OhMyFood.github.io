@@ -81,7 +81,8 @@ header p {
 .check {
   color: white;
   background: #99E2D0;
-  width: 0;
+  margin-right: -83px;
+  width: 83px;
   height: 95px;
   border-radius: 0 20px 20px 0;
   align-items: center;
@@ -221,7 +222,6 @@ footer {
 .restoaccess, .restoaccess1 {
   display: flex;
   align-items: center;
-  justify-content: center;
   background: #eaeaea;
   margin-bottom: 15px;
   margin-left: 25px;
@@ -252,7 +252,7 @@ footer {
 .position {
   display: flex;
   align-items: center;
-  margin-right: 70px;
+  margin-left: 20px;
 }
 
 .iconfonction, .iconfonction1 {
@@ -286,6 +286,7 @@ footer {
   border-bottom: 3px solid #99E2D0;
   width: 50px;
   padding-bottom: 5px;
+  font-weight: 500;
 }
 
 .menu {
@@ -302,7 +303,7 @@ footer {
   overflow: hidden;
 }
 .menu .cartemenu:hover .check {
-  width: 80px;
+  margin-right: 0;
 }
 .menu .prix {
   margin-right: 25px;
